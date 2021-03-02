@@ -6,4 +6,4 @@ bootdelay=2
 bootside=a
 loadaddr=0x83000000
 rootfs=rofs-a
-setmmcargs=setenv bootargs ${bootargs} rootwait root=PARTLABEL=${rootfs}
+setmmcargs=setenv bootargs crashkernel=32M ${bootargs} rootwait root=PARTLABEL=${rootfs}
